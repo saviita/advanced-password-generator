@@ -1,0 +1,12 @@
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    padding-block: 10px;
+    padding-inline: 20px;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+    background-color: var(--color-input);
+    box-shadow: var(--color-shadow);
+}

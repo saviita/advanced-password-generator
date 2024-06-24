@@ -1,0 +1,35 @@
+@use '../mixins/pseudo.scss' as *;
+
+.toggle {
+    display: flex;
+    &__label {
+        display: flex;
+        position: relative;
+        align-items: center;
+        width: 75px;
+        height: 40px;
+        border-radius: 2rem;
+        background-color: grey;
+
+        &::after {
+            @include pseudo (30px, 30px) {
+                left: 8px;
+                border-radius: 50%;
+                background-color: var(--color-text);
+                transition: translate 0.3s;
+            }
+        }
+    }
+
+    &__check {
+        display: none;
+    }
+
+    &__check:checked + &__label {
+        background-color: var(--color-range);
+    }
+
+    &__check:checked + &__label::after {
+        translate: 30px;
+    }
+}

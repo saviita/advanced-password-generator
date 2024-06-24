@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- PON UN FAVICON!!! -->
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <!-- CAMBIA EL TITLE!!! -->
+    <title>Vite Template</title>
+  </head>
+  <body>
+    <main class="main">
+      <input type="text" class="password" id="password" placeholder="P4$5W0RD!" disabled>
+      <label for="" class="label"> LENGTH: <span class="label__length" id="length"></span></label>
+      <div class="range">
+        <span>4</span>
+        <input type="range" name="" id="range" class="range__input" min="4" max="32" value="16">
+        <span>32</span>
+      </div>
+
+      <div class="uppercase filter">
+        <span class="uppercase__span">Include Uppercase</span>
+        <div class="toggle uppercase__toggle">
+          <input type="checkbox" name="" id="uppercase" class="toggle__check">
+          <label for="uppercase" class="toggle__label"></label>
+        </div>
+      </div>
+      <div class="lowercase filter">
+        <span class="lowercase__span">Include Lowercase</span>
+        <div class="toggle lowercase__toggle">
+          <input type="checkbox" name="" id="lowercase" class="toggle__check">
+          <label for="lowercase" class="toggle__label"></label>
+        </div>
+      </div>
+      <div class="numbers filter">
+        <span class="numbers__span">Include Numbers</span>
+        <div class="toggle numbers__toggle">
+          <input type="checkbox" name="" id="numbers" class="toggle__check">
+          <label for="numbers" class="toggle__label"></label>
+        </div>
+      </div>
+      <div class="symbols filter">
+        <span class="symbols__span">Include Symbols</span>
+        <div class="toggle symbols__toggle">
+          <input type="checkbox" name="" id="symbols" class="toggle__check">
+          <label for="symbols" class="toggle__label"></label>
+        </div>
+      </div>
+      
+
+      <button class="button" id="btn">Generate Password</button>
+    </main>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
